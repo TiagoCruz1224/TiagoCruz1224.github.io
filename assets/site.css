@@ -177,7 +177,7 @@ pre{margin:0;padding:14px 16px;font:14px/1.6 var(--mono);white-space:pre-wrap;ov
 .live-shots figure,.trailer{margin:0}
 .live-shots img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}
 .live-shots figcaption{margin-top:8px;font-size:14px;color:var(--fog)}
-.trailer{margin-top:34px}
+.trailer{margin-top:34px;scroll-margin-top:96px}
 .trailer video{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:14px;border:1px solid var(--line);background:var(--night)}
 .trailer figcaption{margin-top:10px;max-width:72ch;font-size:15px;color:var(--fog)}.trailer figcaption b{color:var(--paper)}
 .shots{display:flex;gap:14px;overflow-x:auto;margin-top:24px;padding-bottom:8px;scroll-snap-type:x mandatory}
@@ -274,6 +274,7 @@ pre{margin:0;padding:14px 16px;font:14px/1.6 var(--mono);white-space:pre-wrap;ov
   .ver{text-align:left;padding:0 0 6px}
   .ver b{font-size:38px}
   .changes li{grid-template-columns:1fr;gap:4px}
+  .trailer{scroll-margin-top:170px}
 }
 @media (max-width:420px){
   .profile{padding:14px}
@@ -286,4 +287,4 @@ pre{margin:0;padding:14px 16px;font:14px/1.6 var(--mono);white-space:pre-wrap;ov
 }
 [hidden]{display:none!important}
 /* without JavaScript, a level still opens from its link */
-html:not(.js) .screen:not(:target){display:none}
+html:not(.js) .screen:not(:target):not(:has(:target)){display:none}

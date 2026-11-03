@@ -53,8 +53,8 @@
     s.querySelectorAll('video[data-poster]').forEach(v => { v.poster = v.dataset.poster; v.removeAttribute('data-poster'); });
     app.inert = true;
     root.style.overflow = 'hidden';
-    // every screen is a history entry, so the browser's back button closes it
-    if (location.hash !== '#' + id) history.pushState(null, '', '#' + id);
+    // every screen is a history entry, so the browser's back button closes it; an address already inside it (#trailer) stays
+    if (document.getElementById(location.hash.slice(1))?.closest('[data-screen]') !== s) history.pushState(null, '', '#' + id);
     s.querySelector('[tabindex="-1"]').focus({ preventScroll: true });
     const hidePrev = () => { if (prev) { prev.hidden = true; prev.classList.remove('entering'); } };
     if (reduce.matches) return hidePrev();
@@ -214,11 +214,19 @@
     try { localStorage.setItem('lang', pt ? 'en' : 'pt'); } catch (e) {}
   }));
 
-  // open the level named in the address, without the iris; follow the browser's back and forward too
+  // open the level named in the address, without the iris; follow the browser's back and forward too.
+  // The address can also name a place inside a level (#trailer): the level opens, that place scrolls into view and
+  // its player gets the focus (nothing plays by itself).
   const route = () => {
-    const id = location.hash.slice(1);
-    if (id && document.getElementById(id)?.matches('[data-screen]')) show(id);
-    else close(true);
+    const target = document.getElementById(location.hash.slice(1)), s = target?.closest('[data-screen]');
+    if (!s) return close(true);
+    show(s.id);
+    if (target === s) return;
+    requestAnimationFrame(() => {
+      // block "start" with the target's scroll-margin-top (CSS), the same place the browser's own jump to #trailer lands
+      target.scrollIntoView({ block: 'start', behavior: reduce.matches ? 'auto' : 'smooth' });
+      (target.querySelector('video') || target).focus({ preventScroll: true });
+    });
   };
   addEventListener('popstate', route);
   route();
