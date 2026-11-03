@@ -48,6 +48,8 @@
     open = s;
     s.hidden = false;
     s.scrollTop = 0;
+    // a video's cover loads only when its level opens, not with the map
+    s.querySelectorAll('video[data-poster]').forEach(v => { v.poster = v.dataset.poster; v.removeAttribute('data-poster'); });
     app.inert = true;
     root.style.overflow = 'hidden';
     // every screen is a history entry, so the browser's back button closes it
