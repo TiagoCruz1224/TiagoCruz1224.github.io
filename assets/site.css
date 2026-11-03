@@ -225,7 +225,8 @@ pre{margin:0;padding:14px 16px;font:14px/1.6 var(--mono);white-space:pre-wrap;ov
 .stats div{padding:12px 14px;border-radius:10px;border:1px solid var(--edge);background:var(--night);overflow-wrap:break-word}
 .stats dt{font:400 13px/1.3 var(--mono);color:var(--fog)}
 .stats dd{margin:6px 0 0;font-weight:700}
-.stats div:last-child:nth-child(odd){grid-column:1/-1}
+/* the first stat has the longest label: it takes the whole row, the other four pair up */
+.stats div:first-child{grid-column:1/-1}
 
 /* patch notes */
 .notes-title{margin:0;font:900 clamp(64px,9vw,120px)/.85 var(--display);text-transform:uppercase}
