@@ -1,10 +1,366 @@
 <!doctype html>
-<html lang="pt-PT">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Tasca do Zé</title>
-<meta http-equiv="refresh" content="0; url=/tascadoze-site/">
-<link rel="canonical" href="https://tiagocruz1224.github.io/tascadoze-site/">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tiago Cruz — Full Stack Developer · Backend-focused</title>
+<meta name="description" content="Tiago Cruz, Full Stack Developer, backend-focused. Pick a level: a Symfony CMS you can try to break into, a restaurant website in production and a mobile game in development.">
+<link rel="canonical" href="https://tiagocruz1224.github.io/">
+<link rel="alternate" hreflang="en" href="https://tiagocruz1224.github.io/">
+<link rel="alternate" hreflang="pt-PT" href="https://tiagocruz1224.github.io/pt/">
+<link rel="alternate" hreflang="x-default" href="https://tiagocruz1224.github.io/">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>try { if (localStorage.getItem('lang') === 'pt') location.replace('pt/' + location.hash); } catch (e) {}</script>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
 </head>
-<body><a href="/tascadoze-site/">Tasca do Zé</a></body>
+<body>
+<div class="app" id="app">
+<header class="bar gut wide">
+  <a class="brand" href="#top" aria-label="Tiago Cruz"><svg viewBox="50 50 1080.0 180" aria-hidden="true"><path d="M60 75H144M102 75V220M173 60V220M217 220V102A27 27 0 0 1 271 102V220M217 156H271M369 118V102A27 27 0 0 0 315 102V178A27 27 0 0 0 369 178V149.6H342M413 102V178A27 27 0 0 0 467 178V102A27 27 0 0 0 413 102Z" fill="none" stroke="#f3efe2" stroke-width="30" stroke-linecap="butt" stroke-linejoin="miter"/><circle cx="526" cy="140" r="9" fill="#f6c453"/><circle cx="560" cy="140" r="9" fill="#f6c453"/><path d="M612 94L582 140L612 186Z" fill="#f6c453"/><path d="M612 94L642 140L612 186Z" fill="#d9a536"/><circle cx="664" cy="140" r="9" fill="#f6c453"/><circle cx="698" cy="140" r="9" fill="#f6c453"/><path d="M811 118V102A27 27 0 0 0 757 102V178A27 27 0 0 0 811 178V162M855 220V75H873.3A35.7 35.7 0 0 1 873.3 146.4H855M882 146.4L909 220M953 60V178A27 27 0 0 0 1007 178V60M1036 75H1105L1051 205H1120" fill="none" stroke="#f3efe2" stroke-width="30" stroke-linecap="butt" stroke-linejoin="miter"/></svg></a>
+  <nav aria-label="Main">
+    <button class="navlink" type="button" data-open="notes">Patch notes</button>
+    <a class="navlink" href="https://github.com/TiagoCruz1224">GitHub</a>
+    <a class="navlink" href="https://www.linkedin.com/in/tiagocruz1224/">LinkedIn</a>
+    <a class="navlink lang" href="pt/" hreflang="pt-PT" lang="pt-PT">Português</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="world" aria-labelledby="who">
+    <svg class="terrain" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <defs><mask id="route-reveal" maskUnits="userSpaceOnUse" x="0" y="0" width="1280" height="720"><path class="route-mask" pathLength="1" d="M300 540 C 400 470, 500 400, 612 384 S 800 530, 892 524 S 1040 330, 1070 226"/></mask></defs>
+      <path class="wave" d="M60 660 h50 M130 680 h30 M560 640 h56 M620 660 h30 M1150 470 h50 M1130 490 h28 M820 150 h44 M760 250 h30 M1180 620 h40"/>
+<path class="land" d="M454.9 556.0 C455.4 583.5 469.1 618.3 448.8 639.2 C428.5 660.2 372.3 679.4 333.3 681.9 C294.3 684.4 251.2 667.7 215.0 654.2 C178.7 640.7 126.7 623.2 115.8 600.7 C104.8 578.2 132.2 542.8 149.1 519.4 C165.9 495.9 186.3 474.3 216.8 459.9 C247.4 445.6 294.2 431.1 332.4 433.5 C370.6 435.9 425.4 454.0 445.8 474.5 C466.2 494.9 454.4 528.5 454.9 556.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.00s" d="M414.6 562.0 C415.4 579.1 409.2 600.3 393.9 614.5 C378.6 628.8 350.3 642.7 322.7 647.7 C295.0 652.8 253.7 654.1 228.0 645.1 C202.4 636.1 178.2 612.8 168.9 593.8 C159.5 574.8 161.2 549.1 171.9 530.9 C182.6 512.7 207.5 495.3 233.0 484.6 C258.5 474.0 299.1 462.6 325.1 467.2 C351.1 471.7 374.1 496.4 389.0 512.2 C403.9 528.0 413.8 544.9 414.6 562.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.10s" d="M377.5 562.0 C378.0 575.4 383.7 593.0 373.4 603.1 C363.2 613.1 335.3 620.8 315.9 622.2 C296.5 623.6 274.0 618.2 257.0 611.7 C239.9 605.1 220.8 594.7 213.6 583.0 C206.4 571.2 205.9 552.1 213.8 541.1 C221.6 530.0 243.9 522.9 260.8 516.8 C277.8 510.6 297.1 503.2 315.3 504.2 C333.5 505.2 359.5 513.3 369.9 522.9 C380.2 532.5 376.9 548.6 377.5 562.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.20s" d="M341.8 562.0 C341.4 569.2 342.8 577.5 337.3 582.9 C331.7 588.2 318.5 592.9 308.4 593.9 C298.4 594.8 285.3 592.1 277.1 588.4 C269.0 584.7 264.0 578.2 259.6 571.8 C255.3 565.4 248.5 556.4 251.2 550.2 C253.9 543.9 266.5 537.9 276.0 534.3 C285.6 530.8 298.1 528.1 308.7 529.0 C319.4 529.8 334.6 534.0 340.1 539.6 C345.6 545.1 342.3 554.8 341.8 562.0Z"/>
+<path class="land" d="M755.1 392.0 C754.9 411.3 761.0 436.8 743.4 449.8 C725.7 462.7 682.2 465.7 649.3 469.6 C616.5 473.5 574.0 480.8 546.3 473.0 C518.7 465.1 492.4 440.7 483.3 422.5 C474.3 404.2 481.6 381.9 492.1 363.4 C502.7 344.9 519.9 320.9 546.5 311.3 C573.2 301.6 619.1 301.5 652.1 305.3 C685.1 309.0 727.3 319.2 744.5 333.7 C761.7 348.1 755.3 372.7 755.1 392.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.12s" d="M721.5 398.0 C718.4 411.6 711.9 422.9 699.4 434.1 C686.8 445.3 667.3 462.4 646.3 465.4 C625.2 468.4 593.1 459.6 572.8 452.0 C552.6 444.4 534.7 432.6 524.8 419.6 C514.9 406.6 504.7 386.0 513.3 373.9 C521.8 361.9 553.8 354.4 576.0 347.2 C598.1 340.0 622.5 329.9 646.2 330.8 C669.9 331.6 705.8 341.3 718.4 352.5 C730.9 363.7 724.7 384.4 721.5 398.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.22s" d="M690.6 398.0 C690.7 407.4 692.3 418.6 683.9 426.5 C675.5 434.4 656.5 443.1 640.2 445.2 C623.8 447.3 599.2 444.4 585.8 438.9 C572.3 433.4 565.4 421.7 559.4 412.2 C553.5 402.7 545.3 390.5 550.1 381.8 C554.9 373.0 573.6 363.8 588.3 359.7 C603.0 355.6 622.5 355.4 638.3 357.2 C654.0 358.9 674.0 363.3 682.7 370.1 C691.5 376.9 690.4 388.6 690.6 398.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.32s" d="M660.9 398.0 C660.3 403.1 659.8 408.2 655.3 412.4 C650.7 416.6 642.0 421.8 633.5 423.0 C625.1 424.2 612.4 422.5 604.6 419.8 C596.7 417.0 588.2 411.3 586.2 406.5 C584.1 401.7 588.6 395.2 592.3 390.8 C596.0 386.4 601.4 382.6 608.2 379.9 C615.0 377.2 624.6 374.3 633.0 374.6 C641.4 375.0 654.0 378.0 658.6 381.9 C663.3 385.8 661.4 392.9 660.9 398.0Z"/>
+<path class="land" d="M1046.3 540.0 C1045.4 561.9 1045.1 587.9 1025.5 604.4 C1005.8 620.9 962.7 635.6 928.5 638.9 C894.3 642.3 849.8 635.6 820.1 624.6 C790.5 613.7 764.2 593.3 750.7 573.3 C737.2 553.2 727.7 524.0 739.1 504.2 C750.5 484.3 787.3 464.5 818.9 454.0 C850.4 443.5 893.1 438.1 928.5 441.2 C963.8 444.3 1011.3 456.3 1030.9 472.8 C1050.5 489.3 1047.2 518.1 1046.3 540.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.24s" d="M1008.3 546.0 C1008.0 563.4 1015.5 586.6 1000.7 597.7 C985.9 608.8 947.3 609.5 919.3 612.8 C891.2 616.1 853.2 624.9 832.4 617.7 C811.6 610.4 800.8 585.4 794.4 569.5 C788.0 553.6 787.1 537.8 793.8 522.4 C800.6 506.9 813.4 485.8 834.8 476.9 C856.2 468.1 894.2 466.5 922.1 469.3 C950.0 472.0 987.8 480.8 1002.2 493.5 C1016.6 506.3 1008.5 528.6 1008.3 546.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.34s" d="M973.2 546.0 C973.1 556.6 971.8 569.9 961.8 577.7 C951.9 585.6 930.6 591.3 913.6 593.1 C896.5 594.9 873.4 594.1 859.6 588.8 C845.8 583.5 835.9 571.2 830.7 561.4 C825.6 551.6 823.4 539.4 828.6 530.1 C833.7 520.8 847.6 510.5 861.7 505.4 C875.9 500.4 896.6 498.2 913.4 499.6 C930.2 501.0 952.6 506.1 962.6 513.9 C972.6 521.6 973.3 535.4 973.2 546.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.44s" d="M939.5 546.0 C938.7 551.8 936.5 557.8 931.1 562.0 C925.7 566.1 915.9 569.7 907.2 570.9 C898.4 572.0 886.7 571.4 878.5 568.8 C870.3 566.2 861.4 560.6 858.2 555.3 C855.0 550.0 856.2 542.6 859.3 536.9 C862.4 531.3 868.6 524.2 876.7 521.3 C884.7 518.4 897.8 518.3 907.7 519.4 C917.6 520.4 930.8 523.0 936.1 527.5 C941.4 531.9 940.3 540.2 939.5 546.0Z"/>
+<path class="land fog" d="M1190.5 230.0 C1189.2 247.8 1183.0 266.3 1167.1 281.2 C1151.2 296.2 1123.7 314.9 1095.2 319.8 C1066.7 324.7 1024.3 320.0 996.0 310.6 C967.7 301.1 936.6 281.8 925.6 263.0 C914.6 244.3 918.6 217.3 930.0 198.0 C941.3 178.6 966.6 155.0 993.7 146.9 C1020.8 138.9 1062.4 144.9 1092.6 149.5 C1122.8 154.1 1158.7 161.2 1175.0 174.6 C1191.3 188.0 1191.8 212.2 1190.5 230.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.36s" d="M1159.2 236.0 C1158.6 250.1 1160.4 267.1 1148.3 277.3 C1136.3 287.5 1108.4 295.0 1087.1 297.1 C1065.8 299.1 1040.6 296.0 1020.7 289.7 C1000.7 283.5 974.5 272.0 967.2 259.5 C959.9 247.0 967.9 227.4 977.0 214.7 C986.1 202.0 1003.3 190.4 1021.7 183.5 C1040.2 176.6 1065.8 171.8 1087.6 173.4 C1109.3 174.9 1140.2 182.3 1152.1 192.7 C1164.0 203.1 1159.8 221.9 1159.2 236.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.46s" d="M1130.3 236.0 C1129.9 244.6 1125.9 254.1 1117.8 261.2 C1109.8 268.4 1096.2 276.3 1082.0 278.9 C1067.8 281.5 1045.9 281.3 1032.6 276.7 C1019.3 272.1 1006.4 260.7 1002.2 251.5 C998.0 242.3 1002.1 230.8 1007.4 221.7 C1012.6 212.5 1021.6 200.4 1033.7 196.5 C1045.9 192.6 1066.2 196.1 1080.6 198.3 C1095.0 200.5 1111.9 203.3 1120.2 209.5 C1128.5 215.8 1130.7 227.4 1130.3 236.0Z"/>
+<path class="contour" pathLength="1" style="animation-delay:0.56s" d="M1102.6 236.0 C1102.9 241.3 1105.3 248.5 1100.9 252.3 C1096.6 256.1 1084.8 257.8 1076.4 258.7 C1067.9 259.6 1056.4 260.3 1050.1 257.7 C1043.7 255.1 1040.9 248.2 1038.3 243.2 C1035.7 238.3 1032.1 232.2 1034.5 227.9 C1036.9 223.5 1045.8 219.5 1052.8 217.2 C1059.7 215.0 1068.4 213.7 1076.1 214.3 C1083.8 214.9 1094.5 217.1 1099.0 220.7 C1103.4 224.3 1102.2 230.7 1102.6 236.0Z"/>
+      <path class="route" mask="url(#route-reveal)" d="M300 540 C 400 470, 500 400, 612 384 S 800 530, 892 524 S 1040 330, 1070 226"/>
+    </svg>
+
+    <div class="title-card gut">
+      <h1 class="name" id="who"><span>Tiago</span><span>Cruz</span></h1>
+      <p class="role">Full Stack Developer · Backend-focused</p>
+      <p class="tagline">Backend at work. Games on the side.</p>
+      <p class="hint"><b>Choose a level</b><span><kbd>←</kbd> <kbd>→</kbd> move</span><span><kbd>Enter</kbd> play</span></p>
+    </div>
+
+    <ol class="levels gut" aria-label="Levels">
+      <li><a class="node is-here" href="#cms" data-level="cms" style="--x:23.44%;--y:75%;--d:.55s"><span class="orb" aria-hidden="true">1</span><span class="plate"><b>CMS</b><small>Work in progress</small></span></a></li>
+      <li><a class="node" href="#bila" data-level="bila" style="--x:47.81%;--y:53.33%;--d:1.05s"><span class="orb" aria-hidden="true">2</span><span class="plate"><b>Bila Buffet</b><small>In production</small></span></a></li>
+      <li><a class="node" href="#tasca" data-level="tasca" style="--x:69.69%;--y:72.78%;--d:1.6s"><span class="orb" aria-hidden="true">3</span><span class="plate"><b>Tasca do Zé</b><small>Game in development</small></span></a></li>
+      <li><a class="node locked" href="#next" data-level="next" style="--x:83.59%;--y:31.39%;--d:2.2s"><span class="orb" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><span class="plate"><b>Next level</b><small>Locked</small></span></a></li>
+    </ol>
+    <div class="cursor" aria-hidden="true"><svg viewBox="0 0 30 38"><path d="M15 37 L3 18 L15 1 L27 18 Z" fill="#f6c453"/><path d="M15 37 L15 1 L27 18 Z" fill="#d9a536"/></svg></div>
+  </section>
+
+  <footer class="foot gut wide">
+    <span>No cookies, no tracking.</span>
+    <span><a href="https://www.linkedin.com/in/tiagocruz1224/">LinkedIn</a> · <a href="https://github.com/TiagoCruz1224">GitHub</a></span>
+  </footer>
+</main>
+</div>
+
+<!-- Level 1: CMS -->
+<section class="screen" id="cms" aria-labelledby="cms-t" data-screen>
+  <div class="screen-top gut"><div class="in">
+    <button class="back" type="button" data-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back to map</button>
+    <span class="top-r"><span class="crumb">Level 1 of 4</span><a class="navlink lang" href="pt/" hreflang="pt-PT" lang="pt-PT">Português</a></span>
+  </div></div>
+  <div class="screen-body gut">
+    <div class="lvl-head reveal">
+      <div>
+        <p class="lvl-tag">Level 1 <span class="pill">Work in progress</span></p>
+        <h2 class="lvl-title" id="cms-t" tabindex="-1">CMS</h2>
+        <p class="lead">A content management system with a Symfony REST API and a Vue 3 admin dashboard. Editors build pages from blocks, schedule them and keep every revision, while drafts stay private.</p>
+      </div>
+      <ul class="chips" aria-label="Built with"><li>Symfony 6.4</li><li>Doctrine ORM</li><li>MySQL</li><li>JWT</li><li>Vue 3</li><li>Pinia</li><li>PHPUnit</li></ul>
+    </div>
+
+    <div class="grid">
+      <div class="mission reveal">
+        <h3>Mission: break in</h3>
+        <p class="sub">Four ways people try to get into a CMS. Pick one to send it. Every answer below is the API's real response.</p>
+        <div class="attempts" role="group" aria-label="Attempts">
+          <button class="atk" type="button" data-i="0" aria-pressed="true" data-done="false"><span>Make yourself admin<code>POST /api/register</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk" type="button" data-i="1" aria-pressed="false" data-done="false"><span>Read someone else's draft<code>GET /api/pages/13</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk" type="button" data-i="2" aria-pressed="false" data-done="false"><span>Change the password without the old one<code>PUT /api/profile</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk" type="button" data-i="3" aria-pressed="false" data-done="false"><span>Open a page before it goes live<code>GET /api/pages/21</code></span><span class="pip" aria-hidden="true"></span></button>
+        </div>
+        <div class="console" id="console">
+          <div class="c-row"><span><span class="m" id="c-m">POST</span> <span id="c-p">/api/register</span></span><span class="who" id="c-who">visitor</span></div>
+          <pre class="c-req" id="c-body"></pre>
+          <div class="c-row"><span>Response</span><span id="c-st" class="ok">201 Created</span></div>
+          <pre id="c-res"></pre>
+          <div class="verdict"><span class="stamp" id="c-stamp">Blocked</span><p id="c-why"></p></div>
+        </div>
+        <p class="score" aria-live="polite"><span>Blocked <span id="score">0 of 4</span></span><span class="pips" aria-hidden="true"><i></i><i></i><i></i><i></i></span></p>
+        <div class="done-banner" id="done" hidden>
+          <b>Mission complete</b>
+          <p>All four attempts were blocked, and 11 functional tests keep it that way. <a href="https://github.com/TiagoCruz1224/CMS/blob/HEAD/backend/tests/Controller/Api/PermissionsTest.php">Read the tests</a></p>
+        </div>
+        <p class="note">Example data. Status codes, messages and rules match the API and its tests.</p>
+      </div>
+
+      <aside class="side reveal" aria-labelledby="ach-t">
+        <h3 id="ach-t">Achievements</h3>
+        <ul class="ach">
+          <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 4l13 5v10c0 8-5.5 14-13 17C12.5 33 7 27 7 19V9z"/><path d="M14 20l4 4 8-8"/></svg><div><b>Doors locked</b><span>3 privilege-escalation paths closed in the API.</span></div></li>
+          <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="6" y="6" width="28" height="28" rx="4"/><path d="M12 20l6 6 11-12"/></svg><div><b>Proof of work</b><span>11 tests and 49 assertions on the access rules.</span></div></li>
+          <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 20s5.5-10 15-10 15 10 15 10-5.5 10-15 10S5 20 5 20z"/><path d="M8 32L32 8"/></svg><div><b>Nothing leaks</b><span>Hidden pages stay hidden in blocks, media and revisions too.</span></div></li>
+        </ul>
+        <div class="btns">
+          <a class="btn" href="https://github.com/TiagoCruz1224/CMS/blob/HEAD/backend/tests/Controller/Api/PermissionsTest.php">Read the tests</a>
+          <a class="btn ghost" href="https://github.com/TiagoCruz1224/CMS">Source on GitHub</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="next-row">
+      <button class="btn ghost" type="button" data-close>Back to map</button>
+      <button class="btn" type="button" data-go="bila">Next level: Bila Buffet</button>
+    </div>
+  </div>
+</section>
+
+<!-- Level 2: Bila Buffet. The repository is private: no link to code. The back office is shown with example data only. -->
+<section class="screen" id="bila" aria-labelledby="bila-t" data-screen>
+  <div class="screen-top gut"><div class="in">
+    <button class="back" type="button" data-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back to map</button>
+    <span class="top-r"><span class="crumb">Level 2 of 4</span><a class="navlink lang" href="pt/" hreflang="pt-PT" lang="pt-PT">Português</a></span>
+  </div></div>
+  <div class="screen-body gut">
+    <div class="lvl-head reveal">
+      <div>
+        <p class="lvl-tag">Level 2 <span class="pill">In production</span></p>
+        <h2 class="lvl-title" id="bila-t" tabindex="-1">Bila Buffet</h2>
+        <p class="lead">A website for a buffet restaurant, live in production. One responsive page in several languages, and a back office where the restaurant manages its daily and weekly menus. Built solo.</p>
+      </div>
+      <ul class="chips" aria-label="Built with"><li>Symfony 7.3</li><li>Twig</li><li>EasyAdmin</li></ul>
+    </div>
+
+    <div class="grid">
+      <div class="mission reveal">
+        <h3>Mission: guided tour</h3>
+        <p class="sub">Four stops on the restaurant's site. Pick one to see where it lives and who runs it.</p>
+        <div class="attempts" role="group" aria-label="Tour stops">
+          <button class="atk stop" type="button" aria-pressed="true" data-done="false"><span>Today's menu<code>back office</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>This week's menu<code>back office</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Book a table<code>public page</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Read the reviews<code>public page</code></span><span class="pip" aria-hidden="true"></span></button>
+        </div>
+        <div class="console" id="tour">
+          <div class="c-row"><span id="t-where">Back office</span><span class="who" id="t-tool">EasyAdmin</span></div>
+          <div class="mock">
+            <p class="mock-h">Daily menu <span>Example data</span></p>
+            <ul><li><span>Example soup</span><b class="on">On today</b></li><li><span>Example main course A</span><b class="on">On today</b></li><li><span>Example main course B</span><b>Off</b></li><li><span>Example dessert</span><b class="on">On today</b></li></ul>
+          </div>
+          <div class="mock" hidden>
+            <p class="mock-h">Weekly menu <span>Example data</span></p>
+            <ul class="mock-week"><li><b>Mon</b><span>Example dish 1</span></li><li><b>Tue</b><span>Example dish 2</span></li><li><b>Wed</b><span>Example dish 3</span></li><li><b>Thu</b><span>Example dish 4</span></li><li><b>Fri</b><span>Example dish 5</span></li><li><b>Sat</b><span>Example dish 6</span></li><li><b>Sun</b><span>Example dish 7</span></li></ul>
+          </div>
+          <div class="mock" hidden>
+            <p class="mock-h">Book a table <span>Example data</span></p>
+            <div class="mock-cal off" aria-hidden="true"><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span></div>
+            <p class="mock-line">Built, switched off for now: bookings go by phone or WhatsApp.</p>
+          </div>
+          <div class="mock" hidden>
+            <p class="mock-h">Reviews <span>Example data</span></p>
+            <ul><li><span>“Example review.” — Example Guest</span><b class="on">5/5</b></li><li><span>“Another example review.” — Sample Name</span><b class="on">4/5</b></li></ul>
+          </div>
+          <div class="verdict"><p id="t-what"></p></div>
+        </div>
+        <p class="score tour-score" aria-live="polite"><span>Visited <span id="t-score">0 of 4</span></span><span class="pips" aria-hidden="true"><i></i><i></i><i></i><i></i></span></p>
+        <div class="done-banner" id="t-done" hidden>
+          <b>Tour complete</b>
+          <p>The menus run from the back office and the reviews live on the page; for now, bookings go by phone or WhatsApp.</p>
+        </div>
+        <p class="note">Example data only: the real back office holds guests' details, so it stays private.</p>
+      </div>
+
+      <aside class="side reveal" aria-labelledby="bila-ach">
+        <h3 id="bila-ach">Achievements</h3>
+        <ul class="ach">
+          <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 30V8M11 17l9-9 9 9"/><path d="M8 34h24"/></svg><div><b>Ships itself</b><span>CI with automatic deploys.</span></div></li>
+          <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="17" cy="17" r="10"/><path d="M24.5 24.5L34 34"/></svg><div><b>Easy to find</b><span>Sitemap, robots and optimised images.</span></div></li>
+          <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="20" cy="20" r="14"/><path d="M6 20h28M20 6c5.5 5 5.5 23 0 28M20 6c-5.5 5-5.5 23 0 28"/></svg><div><b>Many languages</b><span>One responsive page, in several languages.</span></div></li>
+        </ul>
+        <div class="btns">
+          <a class="btn" href="https://bilabuffet.rf.gd/">Visit the live site</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="live reveal">
+      <h3>The live site</h3>
+      <div class="live-shots">
+        <figure><img src="assets/img/bila-site-desktop.jpg" width="1280" height="800" alt="The Bila Buffet website on a computer: the welcome section, “Muito mais do que um buffet.”" loading="lazy"><figcaption>Welcome section, on a computer</figcaption></figure>
+        <figure><img src="assets/img/bila-site-buffet.jpg" width="1280" height="800" alt="The buffet section: dishes grouped into starters and salads, meat, fish and seafood, desserts and sides." loading="lazy"><figcaption>The buffet, on a computer</figcaption></figure>
+        <figure class="phone"><img src="assets/img/bila-site-mobile.jpg" width="390" height="844" alt="The welcome section on a phone." loading="lazy"><figcaption>On a phone</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="next-row">
+      <button class="btn ghost" type="button" data-close>Back to map</button>
+      <button class="btn" type="button" data-go="tasca">Next level: Tasca do Zé</button>
+    </div>
+  </div>
+</section>
+
+<!-- Level 3: Tasca do Ze -->
+<section class="screen" id="tasca" aria-labelledby="tdz-t" data-screen>
+  <div class="screen-top gut"><div class="in">
+    <button class="back" type="button" data-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back to map</button>
+    <span class="top-r"><span class="crumb">Level 3 of 4 · side quest</span><a class="navlink lang" href="pt/" hreflang="pt-PT" lang="pt-PT">Português</a></span>
+  </div></div>
+  <div class="screen-body gut">
+    <div class="lvl-head reveal">
+      <div>
+        <p class="lvl-tag">Level 3 <span class="pill">In development</span></p>
+        <h2 class="lvl-title" id="tdz-t" tabindex="-1">Tasca do Zé</h2>
+      </div>
+      <ul class="chips" aria-label="Built with"><li>Godot 4.7</li><li>Android</li></ul>
+    </div>
+    <div class="tasca-hero reveal">
+      <div class="tasca-sign"><img src="assets/img/tasca-logo.png" width="520" height="330" loading="lazy" alt="Tasca do Zé logo: a blue and white tile sign"></div>
+      <div>
+        <p class="quote">“Zé, the country is big.”</p>
+        <p class="lead">You inherit your grandfather's tasca in Bragança. Pour finos, serve bifanas, catch the thief with a broom, and open tascas across the country, from Bragança to Faro.</p>
+        <ul class="facts">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg><span>Mobile game for Android, free.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg><span>Made solo, with Godot 4.7.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>In development. Coming soon to Google Play.</span></li>
+        </ul>
+        <div class="btns" style="margin-top:22px"><a class="btn" href="https://tiagocruz1224.github.io/tascadoze-site/">Visit the game page</a></div>
+      </div>
+    </div>
+    <figure class="trailer reveal">
+      <video controls preload="none" playsinline poster="assets/img/tasca-trailer-poster.jpg" width="1280" height="720" aria-describedby="trailer-desc">
+        <source src="assets/video/tasca-trailer.webm" type="video/webm">
+        <source src="assets/video/tasca-trailer.mp4" type="video/mp4">
+      </video>
+      <figcaption id="trailer-desc"><b>Trailer, 27 seconds.</b> Music and sound effects, no narration. In-game footage with captions in Portuguese: the tasca is yours, grill bifanas, build up your tasca, chase the thief out with a broom, fado nights, then a map to open tascas across Portugal. It ends on the logo and “Free on Google Play”.</figcaption>
+    </figure>
+    <div class="shots reveal" role="region" aria-label="Screenshots from the store listing" tabindex="0">
+      <img src="assets/img/tasca-shot-1.jpg" width="360" height="640" alt="Store screenshot: “You inherited grandpa’s tasca. Now fill it with people.” A busy tasca in Bragança." loading="lazy">
+      <img src="assets/img/tasca-shot-2.jpg" width="360" height="640" alt="Store screenshot: “The cousin arrived from Paris, and brought the whole family.”" loading="lazy">
+      <img src="assets/img/tasca-shot-3.jpg" width="360" height="640" alt="Store screenshot: “Thief at the till? Sweep him out.”" loading="lazy">
+      <img src="assets/img/tasca-shot-4.jpg" width="360" height="640" alt="Store screenshot: “Fado nights, and the house pays more.”" loading="lazy">
+      <img src="assets/img/tasca-shot-5.jpg" width="360" height="640" alt="Store screenshot: “From Bragança to Faro, open tascas across the country.” The map of Portugal." loading="lazy">
+    </div>
+    <div class="next-row">
+      <button class="btn ghost" type="button" data-close>Back to map</button>
+      <button class="btn" type="button" data-go="next">Next level</button>
+    </div>
+  </div>
+</section>
+
+<!-- Level 4: locked -->
+<section class="screen" id="next" aria-labelledby="next-t" data-screen>
+  <div class="screen-top gut"><div class="in">
+    <button class="back" type="button" data-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back to map</button>
+    <span class="top-r"><span class="crumb">Level 4 of 4</span><a class="navlink lang" href="pt/" hreflang="pt-PT" lang="pt-PT">Português</a></span>
+  </div></div>
+  <div class="screen-body gut">
+    <div class="lvl-head reveal">
+      <div>
+        <p class="lvl-tag">Level 4 <span class="pill">Locked</span></p>
+        <h2 class="lvl-title" id="next-t" tabindex="-1">Next level</h2>
+        <p class="lead">The next project is being planned. It unlocks here when there is something real to show.</p>
+      </div>
+    </div>
+    <div class="locked-art reveal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+    <div class="next-row">
+      <button class="btn ghost" type="button" data-close>Back to map</button>
+      <button class="btn" type="button" data-go="notes">Read the patch notes</button>
+    </div>
+  </div>
+</section>
+
+<!-- Patch notes -->
+<section class="screen" id="notes" aria-labelledby="notes-t" data-screen>
+  <div class="screen-top gut"><div class="in">
+    <button class="back" type="button" data-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back to map</button>
+    <span class="top-r"><span class="crumb">Newest first</span><a class="navlink lang" href="pt/" hreflang="pt-PT" lang="pt-PT">Português</a></span>
+  </div></div>
+  <div class="screen-body gut">
+    <h2 class="notes-title reveal" id="notes-t" tabindex="-1">Patch notes</h2>
+    <ol class="log reveal">
+      <li class="entry">
+        <div class="ver"><b>Side</b><small>unreleased</small></div>
+        <div>
+          <h3>Tasca do Zé</h3>
+          <p class="sub">Mobile game for Android · free · Godot 4.7</p>
+          <ul class="changes"><li><span class="t wip">In progress</span><span>Coming soon to Google Play.</span></li></ul>
+        </div>
+      </li>
+      <li class="entry">
+        <div class="ver"><b>Live</b><small>in production</small></div>
+        <div>
+          <h3>Bila Buffet: live</h3>
+          <p class="sub">Restaurant website · Symfony 7.3 · solo project</p>
+          <ul class="changes">
+            <li><span class="t add">Added</span><span>Daily and weekly menus, managed in the back office.</span></li>
+            <li><span class="t add">Added</span><span>Reservation calendar (built, switched off for now: bookings go by phone or WhatsApp).</span></li>
+            <li><span class="t add">Added</span><span>Google reviews, with a fallback.</span></li>
+            <li><span class="t add">Added</span><span>Sitemap, robots and optimised images.</span></li>
+            <li><span class="t add">Added</span><span>CI with automatic deploys.</span></li>
+          </ul>
+        </div>
+      </li>
+      <li class="entry">
+        <div class="ver"><b>1.2</b><small>Nov 2026</small></div>
+        <div>
+          <h3>CMS: security update</h3>
+          <p class="sub">Symfony 6.4 REST API · access rules</p>
+          <ul class="changes">
+            <li><span class="t sec">Security</span><span>Registration could set its own roles. Roles now never come from the request.</span></li>
+            <li><span class="t sec">Security</span><span>Registering with a name, or updating a profile, could also grant roles. Both paths are closed.</span></li>
+            <li><span class="t fix">Fixed</span><span>Changing an email or password now needs the current password.</span></li>
+            <li><span class="t fix">Fixed</span><span>Drafts, and scheduled pages outside their window, are hidden from everyone but their author and admins. They answer 404.</span></li>
+            <li><span class="t add">Added</span><span>11 functional API tests (49 assertions) that pin these rules down.</span></li>
+          </ul>
+        </div>
+      </li>
+      <li class="entry">
+        <div class="ver"><b>1.1</b><small>Oct 2025</small></div>
+        <div>
+          <h3>CMS: first build</h3>
+          <p class="sub">Symfony REST API and Vue 3 admin dashboard</p>
+          <ul class="changes">
+            <li><span class="t add">Added</span><span>REST API with JWT authentication and Doctrine ORM.</span></li>
+            <li><span class="t add">Added</span><span>Pages built from blocks, with draft, scheduled and published states and revision history.</span></li>
+            <li><span class="t add">Added</span><span>Vue 3 and Pinia admin dashboard.</span></li>
+          </ul>
+        </div>
+      </li>
+      <li class="entry">
+        <div class="ver"><b>1.0</b><small>Apr 2025</small></div>
+        <div>
+          <h3>Started working professionally</h3>
+          <p class="sub">Full stack: PHP/Symfony and React</p>
+        </div>
+      </li>
+    </ol>
+    <div class="party reveal">
+      <h3>Party up</h3>
+      <div class="btns"><a class="btn" href="https://www.linkedin.com/in/tiagocruz1224/">Message me on LinkedIn</a><a class="btn ghost" href="https://github.com/TiagoCruz1224">GitHub</a></div>
+    </div>
+  </div>
+</section>
+</body>
 </html>
