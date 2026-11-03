@@ -111,7 +111,7 @@
         <p class="score" aria-live="polite"><span>Blocked <span id="score">0 of 4</span></span><span class="pips" aria-hidden="true"><i></i><i></i><i></i><i></i></span></p>
         <div class="done-banner" id="done" hidden>
           <b>Mission complete</b>
-          <p>All four attempts were blocked, and 11 functional tests keep it that way. <a href="https://github.com/TiagoCruz1224/CMS/blob/HEAD/backend/tests/Controller/Api/PermissionsTest.php">Read the tests</a></p>
+          <p>All four attempts were blocked, and every access rule is covered by a functional test. <a href="https://github.com/TiagoCruz1224/CMS/blob/HEAD/backend/tests/Controller/Api/PermissionsTest.php">Read the tests</a></p>
         </div>
         <p class="note">Example data. Status codes, messages and rules match the API and its tests.</p>
       </div>
@@ -120,7 +120,7 @@
         <h3 id="ach-t">Achievements</h3>
         <ul class="ach">
           <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 4l13 5v10c0 8-5.5 14-13 17C12.5 33 7 27 7 19V9z"/><path d="M14 20l4 4 8-8"/></svg><div><b>Doors locked</b><span>3 privilege-escalation paths closed in the API.</span></div></li>
-          <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="6" y="6" width="28" height="28" rx="4"/><path d="M12 20l6 6 11-12"/></svg><div><b>Proof of work</b><span>11 tests and 49 assertions on the access rules.</span></div></li>
+          <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="6" y="6" width="28" height="28" rx="4"/><path d="M12 20l6 6 11-12"/></svg><div><b>Proof of work</b><span>Every access rule is covered by a functional test.</span></div></li>
           <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 20s5.5-10 15-10 15 10 15 10-5.5 10-15 10S5 20 5 20z"/><path d="M8 32L32 8"/></svg><div><b>Nothing leaks</b><span>Hidden pages stay hidden in blocks, media and revisions too.</span></div></li>
         </ul>
         <div class="btns">
@@ -332,7 +332,7 @@
             <li><span class="t sec">Security</span><span>Registering with a name, or updating a profile, could also grant roles. Both paths are closed.</span></li>
             <li><span class="t fix">Fixed</span><span>Changing an email or password now needs the current password.</span></li>
             <li><span class="t fix">Fixed</span><span>Drafts, and scheduled pages outside their window, are hidden from everyone but their author and admins. They answer 404.</span></li>
-            <li><span class="t add">Added</span><span>11 functional API tests (49 assertions) that pin these rules down.</span></li>
+            <li><span class="t add">Added</span><span>Functional API tests that pin these rules down.</span></li>
           </ul>
         </div>
       </li>
