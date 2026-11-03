@@ -130,13 +130,11 @@
     "A stolen token is not enough. Changing the password needs the current one.": "Um token roubado não chega. Para mudar a palavra-passe é preciso a atual.",
     "Scheduled pages stay hidden until their publication window opens.": "As páginas agendadas ficam escondidas até a janela de publicação abrir.",
     "Back office": "Back-office",
-    "Public page": "Página pública",
     "Calendar": "Calendário",
-    "Google reviews": "Críticas Google",
     "The restaurant updates the daily menu itself, in the back office.": "O próprio restaurante atualiza a ementa do dia, no back-office.",
-    "The weekly menu is managed in the same back office.": "A ementa da semana gere-se no mesmo back-office.",
-    "The reservation calendar is built but switched off for now: bookings go by phone or WhatsApp.": "O calendário de reservas está feito, mas desligado por agora: as reservas fazem-se por telefone ou WhatsApp.",
-    "Google reviews show on the page, with a fallback.": "As críticas Google aparecem na página, com alternativa."
+    "Bookings show in a monthly calendar in the back office, coloured by status.": "As reservas aparecem num calendário mensal no back-office, com uma cor por estado.",
+    "Highlights for the page are scheduled here, with optional start and end dates.": "Os destaques da página agendam-se aqui, com datas de início e de fim opcionais.",
+    "Reviews from the site and from the restaurant are managed here; Google reviews show on the page, with a fallback.": "As críticas do site e do restaurante gerem-se aqui; as críticas Google aparecem na página, com alternativa."
   };
   const tr = en => (pt && PT[en]) || en;
   const of4 = n => n + (pt ? ' de 4' : ' of 4');
@@ -170,18 +168,18 @@
   atks.forEach((b, i) => b.addEventListener('click', () => send(i)));
   fill(0);
 
-  // Mission: guided tour (Bila Buffet). Visiting is the whole game: nothing to block, just see where each part lives.
+  // Mission: guided tour (Bila Buffet). Visiting is the whole game: each stop shows a screenshot of the back office with demo data.
   const stops = [
     { where: 'Back office', tool: 'EasyAdmin', what: 'The restaurant updates the daily menu itself, in the back office.' },
-    { where: 'Back office', tool: 'EasyAdmin', what: 'The weekly menu is managed in the same back office.' },
-    { where: 'Public page', tool: 'Calendar', what: 'The reservation calendar is built but switched off for now: bookings go by phone or WhatsApp.' },
-    { where: 'Public page', tool: 'Google reviews', what: 'Google reviews show on the page, with a fallback.' }
+    { where: 'Back office', tool: 'Calendar', what: 'Bookings show in a monthly calendar in the back office, coloured by status.' },
+    { where: 'Back office', tool: 'EasyAdmin', what: 'Highlights for the page are scheduled here, with optional start and end dates.' },
+    { where: 'Back office', tool: 'EasyAdmin', what: 'Reviews from the site and from the restaurant are managed here; Google reviews show on the page, with a fallback.' }
   ];
   const sbtn = [...document.querySelectorAll('#bila .stop')];
   const spips = [...document.querySelectorAll('#bila .pips i')];
   function visit(i, first) {
     sbtn.forEach((b, j) => b.setAttribute('aria-pressed', String(j === i)));
-    document.querySelectorAll('#tour .mock').forEach((m, j) => { m.hidden = j !== i; });
+    document.querySelectorAll('#tour .tour-shot').forEach((m, j) => { m.hidden = j !== i; });
     $('t-where').textContent = tr(stops[i].where); $('t-tool').textContent = tr(stops[i].tool); $('t-what').textContent = tr(stops[i].what);
     if (first) return;
     sbtn[i].dataset.done = 'true';

@@ -163,19 +163,11 @@ pre{margin:0;padding:14px 16px;font:14px/1.6 var(--mono);white-space:pre-wrap;ov
 
 .stop[data-done="true"] .pip{background:var(--moss);border-color:var(--moss);animation:pop .35s var(--spring)}
 .tour-score .pips i.on{background:var(--moss);border-color:var(--moss)}
-/* the tour's back office, drawn with example data (the real one holds guests' details) */
-.mock{margin:14px 16px;padding:14px;min-height:232px;border:1px solid var(--line);border-radius:10px;background:var(--night)}
-.mock-h{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 12px;font-weight:700}
-.mock-h span{font:600 12px/1 var(--mono);padding:5px 8px;border-radius:4px;background:var(--fog);color:var(--night)}
-.mock ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-.mock li{display:flex;justify-content:space-between;gap:12px;padding:8px 10px;border-radius:8px;background:var(--land);font-size:15px}
-.mock li b{font-weight:600;color:var(--fog)}.mock li b.on{color:var(--moss)}
-.mock-week li{justify-content:flex-start}.mock-week li b{min-width:44px;color:var(--paper)}
-.mock-cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin-bottom:12px;text-align:center;font:14px/1 var(--mono)}
-.mock-cal i{font-style:normal;color:var(--fog);padding:4px 0}.mock-cal span{padding:8px 0;border-radius:6px;background:var(--land)}
-.mock-cal.off{opacity:.5}
-.mock-cal .sel{background:var(--lantern);color:var(--night);font-weight:600}
-.mock-line{margin:0;font-size:15px}
+/* the tour shows screenshots of a local copy with demo data (the real back office holds guests' details) */
+.tour-shot{margin:14px 16px}
+.tour-shot img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+.tour-shot figcaption{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:8px;font-size:14px;color:var(--fog)}
+.tour-shot figcaption b{font:600 12px/1 var(--mono);padding:5px 8px;border-radius:4px;background:var(--fog);color:var(--night)}
 .live{margin-top:44px}
 .live-shots{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.42fr);gap:16px;margin-top:18px;align-items:start}
 .live-shots figure,.trailer{margin:0}

@@ -170,40 +170,27 @@
     <div class="grid">
       <div class="mission reveal">
         <h3>Mission: guided tour</h3>
-        <p class="sub">Four stops on the restaurant's site. Pick one to see where it lives and who runs it.</p>
+        <p class="sub">Four stops in the restaurant's back office. Pick one to see what the restaurant runs from there.</p>
         <div class="attempts" role="group" aria-label="Tour stops">
           <button class="atk stop" type="button" aria-pressed="true" data-done="false"><span>Today's menu<code>back office</code></span><span class="pip" aria-hidden="true"></span></button>
-          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>This week's menu<code>back office</code></span><span class="pip" aria-hidden="true"></span></button>
-          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Book a table<code>public page</code></span><span class="pip" aria-hidden="true"></span></button>
-          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Read the reviews<code>public page</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Bookings<code>back office</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Highlights<code>back office</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Reviews<code>back office</code></span><span class="pip" aria-hidden="true"></span></button>
         </div>
         <div class="console" id="tour">
           <div class="c-row"><span id="t-where">Back office</span><span class="who" id="t-tool">EasyAdmin</span></div>
-          <div class="mock">
-            <p class="mock-h">Daily menu <span>Example data</span></p>
-            <ul><li><span>Example soup</span><b class="on">On today</b></li><li><span>Example main course A</span><b class="on">On today</b></li><li><span>Example main course B</span><b>Off</b></li><li><span>Example dessert</span><b class="on">On today</b></li></ul>
-          </div>
-          <div class="mock" hidden>
-            <p class="mock-h">Weekly menu <span>Example data</span></p>
-            <ul class="mock-week"><li><b>Mon</b><span>Example dish 1</span></li><li><b>Tue</b><span>Example dish 2</span></li><li><b>Wed</b><span>Example dish 3</span></li><li><b>Thu</b><span>Example dish 4</span></li><li><b>Fri</b><span>Example dish 5</span></li><li><b>Sat</b><span>Example dish 6</span></li><li><b>Sun</b><span>Example dish 7</span></li></ul>
-          </div>
-          <div class="mock" hidden>
-            <p class="mock-h">Book a table <span>Example data</span></p>
-            <div class="mock-cal off" aria-hidden="true"><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span></div>
-            <p class="mock-line">Built, switched off for now: bookings go by phone or WhatsApp.</p>
-          </div>
-          <div class="mock" hidden>
-            <p class="mock-h">Reviews <span>Example data</span></p>
-            <ul><li><span>“Example review.” — Example Guest</span><b class="on">5/5</b></li><li><span>“Another example review.” — Sample Name</span><b class="on">4/5</b></li></ul>
-          </div>
+          <figure class="tour-shot"><img src="assets/img/bila-admin-menu.webp" width="1010" height="760" loading="lazy" alt="The back office's menu editor, in Portuguese: the days of the week, a note for the day and three categories of example dishes, each with an optional image."><figcaption><b>Demo data</b>Menu of the day</figcaption></figure>
+          <figure class="tour-shot" hidden><img src="assets/img/bila-admin-calendar.webp" width="1010" height="760" loading="lazy" alt="The back office's booking calendar for November, in Portuguese, with example bookings coloured as pending, confirmed or declined, and the days that have their own menu marked."><figcaption><b>Demo data</b>Built, switched off for now: bookings go by phone or WhatsApp.</figcaption></figure>
+          <figure class="tour-shot" hidden><img src="assets/img/bila-admin-highlights.webp" width="1010" height="400" loading="lazy" alt="The back office's list of highlights, in Portuguese: three examples with their dates of visibility, position and an on/off switch."><figcaption><b>Demo data</b>Highlights</figcaption></figure>
+          <figure class="tour-shot" hidden><img src="assets/img/bila-admin-reviews.webp" width="1010" height="340" loading="lazy" alt="The back office's list of reviews, in Portuguese: three invented reviews from the site or the restaurant, with stars and an approval switch, one still waiting for approval."><figcaption><b>Demo data</b>Reviews</figcaption></figure>
           <div class="verdict" aria-live="polite"><p id="t-what"></p></div>
         </div>
         <p class="score tour-score" aria-live="polite"><span>Visited <span id="t-score">0 of 4</span></span><span class="pips" aria-hidden="true"><i></i><i></i><i></i><i></i></span></p>
         <div class="done-banner" id="t-done" hidden>
           <b>Tour complete</b>
-          <p>The menus run from the back office and the reviews live on the page; for now, bookings go by phone or WhatsApp.</p>
+          <p>The restaurant runs its menus, highlights and reviews from the back office; for now, bookings go by phone or WhatsApp.</p>
         </div>
-        <p class="note">Example data only: the real back office holds guests' details, so it stays private.</p>
+        <p class="note">Demo data only: screenshots of a local copy. The real back office holds guests' details, so it stays private.</p>
       </div>
 
       <aside class="side reveal" aria-labelledby="bila-ach">

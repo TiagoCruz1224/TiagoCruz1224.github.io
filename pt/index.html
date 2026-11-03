@@ -169,40 +169,27 @@
     <div class="grid">
       <div class="mission reveal">
         <h3>Missão: visita guiada</h3>
-        <p class="sub">Quatro paragens no site do restaurante. Basta escolher uma para ver onde fica e quem a gere.</p>
+        <p class="sub">Quatro paragens no back-office do restaurante. Basta escolher uma para ver o que o restaurante gere a partir dali.</p>
         <div class="attempts" role="group" aria-label="Paragens da visita">
           <button class="atk stop" type="button" aria-pressed="true" data-done="false"><span>Ementa do dia<code>back-office</code></span><span class="pip" aria-hidden="true"></span></button>
-          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Ementa da semana<code>back-office</code></span><span class="pip" aria-hidden="true"></span></button>
-          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Reservar mesa<code>página pública</code></span><span class="pip" aria-hidden="true"></span></button>
-          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Ler as críticas<code>página pública</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Reservas<code>back-office</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Destaques<code>back-office</code></span><span class="pip" aria-hidden="true"></span></button>
+          <button class="atk stop" type="button" aria-pressed="false" data-done="false"><span>Críticas<code>back-office</code></span><span class="pip" aria-hidden="true"></span></button>
         </div>
         <div class="console" id="tour">
           <div class="c-row"><span id="t-where">Back-office</span><span class="who" id="t-tool">EasyAdmin</span></div>
-          <div class="mock">
-            <p class="mock-h">Ementa do dia <span>Dados de exemplo</span></p>
-            <ul><li><span>Sopa de exemplo</span><b class="on">Hoje</b></li><li><span>Prato de exemplo A</span><b class="on">Hoje</b></li><li><span>Prato de exemplo B</span><b>Fora</b></li><li><span>Sobremesa de exemplo</span><b class="on">Hoje</b></li></ul>
-          </div>
-          <div class="mock" hidden>
-            <p class="mock-h">Ementa da semana <span>Dados de exemplo</span></p>
-            <ul class="mock-week"><li><b>Seg</b><span>Prato de exemplo 1</span></li><li><b>Ter</b><span>Prato de exemplo 2</span></li><li><b>Qua</b><span>Prato de exemplo 3</span></li><li><b>Qui</b><span>Prato de exemplo 4</span></li><li><b>Sex</b><span>Prato de exemplo 5</span></li><li><b>Sáb</b><span>Prato de exemplo 6</span></li><li><b>Dom</b><span>Prato de exemplo 7</span></li></ul>
-          </div>
-          <div class="mock" hidden>
-            <p class="mock-h">Reservar mesa <span>Dados de exemplo</span></p>
-            <div class="mock-cal off" aria-hidden="true"><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span></div>
-            <p class="mock-line">Feito, desligado por agora: as reservas fazem-se por telefone ou WhatsApp.</p>
-          </div>
-          <div class="mock" hidden>
-            <p class="mock-h">Críticas <span>Dados de exemplo</span></p>
-            <ul><li><span>“Crítica de exemplo.” — Cliente Exemplo</span><b class="on">5/5</b></li><li><span>“Outra crítica de exemplo.” — Nome Fictício</span><b class="on">4/5</b></li></ul>
-          </div>
+          <figure class="tour-shot"><img src="../assets/img/bila-admin-menu.webp" width="1010" height="760" loading="lazy" alt="O editor da ementa no back-office: os dias da semana, uma nota do dia e três categorias de pratos de exemplo, cada uma com imagem opcional."><figcaption><b>Dados de demonstração</b>Ementa do dia</figcaption></figure>
+          <figure class="tour-shot" hidden><img src="../assets/img/bila-admin-calendar.webp" width="1010" height="760" loading="lazy" alt="O calendário de reservas de novembro no back-office, com reservas de exemplo pintadas como pendentes, confirmadas ou recusadas, e os dias com ementa própria assinalados."><figcaption><b>Dados de demonstração</b>Feito, desligado por agora: as reservas fazem-se por telefone ou WhatsApp.</figcaption></figure>
+          <figure class="tour-shot" hidden><img src="../assets/img/bila-admin-highlights.webp" width="1010" height="400" loading="lazy" alt="A lista de destaques no back-office: três exemplos com as datas em que ficam visíveis, a posição e um interruptor para os ligar ou desligar."><figcaption><b>Dados de demonstração</b>Destaques</figcaption></figure>
+          <figure class="tour-shot" hidden><img src="../assets/img/bila-admin-reviews.webp" width="1010" height="340" loading="lazy" alt="A lista de críticas no back-office: três críticas inventadas, do site ou do restaurante, com estrelas e um interruptor de aprovação, uma ainda por aprovar."><figcaption><b>Dados de demonstração</b>Críticas</figcaption></figure>
           <div class="verdict" aria-live="polite"><p id="t-what"></p></div>
         </div>
         <p class="score tour-score" aria-live="polite"><span>Visitadas <span id="t-score">0 de 4</span></span><span class="pips" aria-hidden="true"><i></i><i></i><i></i><i></i></span></p>
         <div class="done-banner" id="t-done" hidden>
           <b>Visita concluída</b>
-          <p>As ementas gerem-se no back-office e as críticas estão na página; por agora, as reservas fazem-se por telefone ou WhatsApp.</p>
+          <p>O restaurante gere as ementas, os destaques e as críticas no back-office; por agora, as reservas fazem-se por telefone ou WhatsApp.</p>
         </div>
-        <p class="note">Só dados de exemplo: o back-office real tem dados dos clientes, por isso fica privado.</p>
+        <p class="note">Só dados de demonstração: capturas de uma cópia local. O back-office real tem dados dos clientes, por isso fica privado.</p>
       </div>
 
       <aside class="side reveal" aria-labelledby="bila-ach">
