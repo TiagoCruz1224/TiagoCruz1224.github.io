@@ -168,6 +168,7 @@ pre{margin:0;padding:14px 16px;font:14px/1.6 var(--mono);white-space:pre-wrap;ov
 .tour-shot img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
 .tour-shot figcaption{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:8px;font-size:14px;color:var(--fog)}
 .tour-shot figcaption b{font:600 12px/1 var(--mono);padding:5px 8px;border-radius:4px;background:var(--fog);color:var(--night)}
+.tour-shot figcaption a{position:relative;margin-left:auto;padding-block:4px}
 .live{margin-top:44px}
 .live-shots{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.42fr);gap:16px;margin-top:18px;align-items:start}
 .live-shots figure,.trailer{margin:0}
