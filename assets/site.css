@@ -69,6 +69,9 @@ h1,h2,h3{text-wrap:balance}
 .tagline{margin:6px 0 0;color:var(--fog);animation:rise .6s var(--out) .4s both}
 .hint{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:22px 0 0;font-size:15px;color:var(--fog);animation:rise .5s var(--out) 2.6s both}
 .hint b{color:var(--paper);font-weight:700}
+.hint button{position:relative;font:inherit;color:inherit;background:none;border:0;padding:2px;cursor:pointer}
+.hint button kbd{display:block;min-width:28px;text-align:center}
+.hint button:hover kbd{border-color:var(--lantern)}
 
 .levels{list-style:none;margin:0;padding-block:0}
 /* the orb's centre sits exactly on (x, y), where the route passes */

@@ -23,6 +23,7 @@
     n.addEventListener('mouseenter', () => here(n));
     n.addEventListener('focus', () => here(n));
     n.addEventListener('keydown', e => {
+      if (e.altKey || e.ctrlKey || e.metaKey) return; // Alt+← is the browser's Back
       const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
       if (step) { e.preventDefault(); nodes[(i + step + nodes.length) % nodes.length].focus(); }
       if (e.key === 'Home') { e.preventDefault(); nodes[0].focus(); }
@@ -100,6 +101,22 @@
     else show(t.dataset.open, t);
   });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && open) close(); });
+
+  // ← → and Enter play the map as soon as the page opens, not only once a level has the focus.
+  // Up and Down stay with the page; fields and media keep their keys; Enter on a link or button does its own thing.
+  const play = key => {
+    const i = nodes.findIndex(n => n.classList.contains('is-here'));
+    if (key === 'Enter') nodes[i].click();
+    else nodes[(i + (key === 'ArrowRight' ? 1 : -1) + nodes.length) % nodes.length].focus();
+  };
+  document.addEventListener('keydown', e => {
+    if (app.inert || e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    if (e.target.closest('input, textarea, select, video, audio, [contenteditable]')) return;
+    const nothingFocused = e.target === document.body || e.target === root;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft' || (e.key === 'Enter' && nothingFocused)) { e.preventDefault(); play(e.key); }
+  });
+  // the hint's keys do the same when clicked or tapped
+  document.querySelectorAll('.hint [data-key]').forEach(b => b.addEventListener('click', () => play(b.dataset.key)));
 
   // Mission: break in
   const tries = [
